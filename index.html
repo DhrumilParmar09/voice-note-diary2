@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice Note Diary (Offline)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎤 Voice Note Diary</h1>
+
+  <div class="container">
+    <label for="description">Note Description:</label>
+    <input type="text" id="description" placeholder="What's this note about?" />
+
+    <button id="startBtn">Start Recording</button>
+    <button id="stopBtn" disabled>Stop Recording</button>
+
+    <audio id="audioPlayback" controls></audio>
+    <br />
+    <button id="saveBtn" disabled>Save Note</button>
+    <button id="downloadBtn" disabled>Download Note</button>
+
+    <hr />
+    <label for="search">🔍 Search Notes:</label>
+    <input type="text" id="search" placeholder="Type date or description..." />
+
+    <h2>🗂️ Saved Notes</h2>
+    <ul id="noteList"></ul>
+  </div>
+
+  <!-- Popup message -->
+  <div id="popup" class="popup">Note saved successfully!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

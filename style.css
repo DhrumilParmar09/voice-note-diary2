@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f8ff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#noteList {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  margin-top: 10px;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.popup {
+  visibility: hidden;
+  min-width: 200px;
+  margin-left: -100px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 20px;
+  font-size: 16px;
+  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 0;
+}
+
+.popup.show {
+  visibility: visible;
+  opacity: 1;
+}
